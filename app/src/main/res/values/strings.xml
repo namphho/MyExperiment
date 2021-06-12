@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MyExperiment</string>
+    <string name="add_word">Add Word</string>
+    <string name="hint_word">Word...</string>
+    <string name="button_save">Save</string>
+    <string name="empty_not_saved">Word not saved because it is empty.</string>
+    <string name="facebook_app_id">383542546274059</string>
+    <string name="fb_login_protocol_scheme">fb383542546274059</string>
+
+</resources>

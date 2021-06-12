@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "589668279624",
+    "project_id": "mylab-3d9d7",
+    "storage_bucket": "mylab-3d9d7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:589668279624:android:46d8c13171cf01b3ba7f7d",
+        "android_client_info": {
+          "package_name": "com.example.myexperiment"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "589668279624-mekca2rjkm431tlcqqgva9ibft8qm6mt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.myexperiment",
+            "certificate_hash": "1adae9a351be622dd7dab85f3b7b05432ed73a70"
+          }
+        },
+        {
+          "client_id": "589668279624-3t9044qlkb2rkfou9a2jtlfjeh4h6gnf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBzP8ifWTpEZ4bHm-a0m0OXQfY9dfq4ibA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "589668279624-3t9044qlkb2rkfou9a2jtlfjeh4h6gnf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

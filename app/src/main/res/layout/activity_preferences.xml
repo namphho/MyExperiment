@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="model"
+            type="com.example.myexperiment.experiments.preferences_room.PreferencesViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/tvSaveValue"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".experiments.preferences_room.PreferencesActivity">
+
+        <EditText
+            android:id="@+id/edtSharedPreferences"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:text="@={model.inputText}"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="Autofill,LabelFor" />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SAVE"
+            android:onClick="@{() -> model.handleSaveValue()}"
+            app:layout_constraintStart_toStartOf="@+id/edtSharedPreferences"
+            app:layout_constraintTop_toBottomOf="@+id/edtSharedPreferences" />
+
+        <Button
+            android:id="@+id/btnReceived"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Receive"
+            android:onClick="@{() -> model.handleReceived()}"
+            app:layout_constraintStart_toEndOf="@+id/btnSave"
+            app:layout_constraintTop_toTopOf="@+id/btnSave" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Save value: "
+            app:layout_constraintStart_toStartOf="@+id/btnSave"
+            app:layout_constraintTop_toBottomOf="@+id/btnSave" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:text="@{model.receivedValue}"
+            app:layout_constraintBottom_toBottomOf="@+id/textView2"
+            app:layout_constraintStart_toEndOf="@+id/textView2"
+            app:layout_constraintTop_toTopOf="@+id/textView2" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
